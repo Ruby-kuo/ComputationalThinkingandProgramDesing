@@ -1,0 +1,88 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled9.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOJaqHahi95Vm8r/6kk/lLG",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Ruby-kuo/ComputationalThinkingandProgramDesing/blob/master/%E6%9C%9F%E6%9C%AB%E5%A0%B1%E5%91%8A%20%E5%B0%8D%E8%A9%B1%E6%A9%9F%E5%99%A8%E4%BA%BA\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "wlHbSakYllTQ",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 162
+        },
+        "outputId": "5439966a-a578-4474-b648-0f816b54c3a1"
+      },
+      "source": [
+        "# 機器人名稱: 吃吃\n",
+        "# 機器人打招呼\n",
+        "# 機器人自我介紹\n",
+        "print(\"哈囉! 我是吃吃，一個熱愛蒐集美食情報的小吃貨\")\n",
+        "print(\"只要是景美的美食都是我的情報來源唷\")\n",
+        "\n",
+        "#取得使用者名稱\n",
+        "name = input(\"主人叫什麼名字,人家下次想叫您的名字喔:\")\n",
+        "\n",
+        "# 詢問要吃哪種美食\n",
+        "print(location, \"想要找離捷運美食(-1) 巷弄美食(2)還是其他(-2)呢？\")\n",
+        "choice = input(\"請輸入選擇?\")\n",
+        "choice = int(choice) \n",
+        "if choice <=-1: \n",
+        "  print(\"請重新選擇\")\n",
+        "elif choice >=-1:\n",
+        "  print(choice,\"瀚星百貨的魔法咖哩是人氣首選喔\")\n",
+        "else:\n",
+        "  print(choice,\"曾記麻油雞在您的收藏名單喔\")\n",
+        "\n",
+        "#告知使用者地址\n",
+        "if choice <=-1: \n",
+        "  print(\"請重新選擇\")\n",
+        "elif choice >=-1:\n",
+        "  print(choice,\"台北市文山區景興路118號地下一樓\")\n",
+        "else:\n",
+        "  print(choice,\"台北市文山區景美街15號\")\n",
+        "\n",
+        "print(\"吃吃祝福主人今天也要吃飽飽喔！\")\n"
+      ],
+      "execution_count": 51,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "哈囉! 我是吃吃，一個熱愛蒐集美食情報的小吃貨\n",
+            "只要是景美的美食都是我的情報來源唷\n",
+            "主人叫什麼名字,人家下次想叫您的名字喔:hi\n",
+            "1 想要找離捷運美食(-1) 巷弄美食(2)還是其他(-2)呢？\n",
+            "請輸入選擇?2\n",
+            "2 瀚星百貨的魔法咖哩是人氣首選喔\n",
+            "2 台北市文山區景興路118號地下一樓\n",
+            "吃吃祝福主人今天也要吃飽飽喔！\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
